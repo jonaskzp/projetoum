@@ -1,3 +1,22 @@
 body {
-  background: rgba(138, 35, 35, 0.178);
+  background-image: url(./blackbg.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  /*no modo simplificado seria:
+ background: url(./kzp/3897aeb1-95ee-4077-a759-beffe1e4cb8b.jfif) no-repeat top
+    center/cover;*/
+}
+
+#caixaprincipal {
+  border: 10px solid red;
+  height: 2517px;
+  width: 1676px;
+  margin: auto;
+}
+#perfil img {
+  /*imagens sao elementos inline, logo marginauto nao poe ela na posição correta, por isso a transformamos em display block, pro atributo atterior funcionar*/
+  display: block;
+  height: 820px;
+  margin: auto;
 }
